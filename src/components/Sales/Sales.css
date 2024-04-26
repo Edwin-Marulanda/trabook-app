@@ -1,0 +1,19 @@
+.custom-width-card {
+    width: 13rem;
+}
+
+.w-80 {
+    width: 85% !important;
+}
+
+.btn-carousel{
+    color: #ffffff;
+    background-color: #fa7436;
+    width: 35px;
+    height: 35px;
+}
+.btn-carousel:hover{
+    background-color: #f37a3d;
+    width: 35px;
+    height: 35px;
+}

@@ -1,38 +1,250 @@
-.App {
-  text-align: center;
+:root{
+    --primary: #fa7436;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.back-subs{
+    background-image: url('../src/assets/img/img_back_subs.png');
+    background-size: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.back-best{
+    background-image: url('../src/assets/img/img_back_best.png');
+    background-repeat: no-repeat;
+    background-position: 85%;
+    background-size: contain;
+}
+.back-card-sign{
+    background-image: url('../src/assets/img/back_card_sing.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+   
+}
+.back-card-money{
+    background-image: url('../src/assets/img/back_card_money.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+   
+}
+.back-card-travel{
+    background-image: url('../src/assets/img/back_card_travel.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+   
+}
+
+.back-todo{
+    background-image: url('../src/assets/img/back_todo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 87%;
+   
+}
+.orange-text {
+    color: var(--primary);
+}
+
+.bg-orange {
+    background-color: var(--primary) !important;
+    color: white;
+}
+
+.bg-section {
+    background-color: #fefcfb;
+}
+
+.text-sub {
+    color: #9c9eb8;
+    font-size: 11px;
+}
+
+.poppins-font {
+    font-family: "Poppins", sans-serif;
+}
+
+.parrafo-gris {
+    color: #999;
+}
+
+.img-butt {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    transition: 0.5s ease-in-out;
+}
+.card:hover{
+    box-shadow: 0 8px 16px 0 rgba(238, 139, 19, 0.29);
+}
+
+input:hover{
+    box-shadow: 0 8px 16px 0 rgba(238, 139, 19, 0.29);
+}
+input:focus{
+    box-shadow: 0 8px 16px 0 rgba(238, 139, 19, 0.29);
+}
+.card:hover .img-butt {
+    filter: brightness(70%);
+}
+
+.card:hover .boton-imagen {
+    opacity: 1;
+}
+
+.boton-imagen {
+    background-color: var(--primary);
+    border: 0px;
+    color: white;
+    width: 60%;
+    height: 20%;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+}
+
+.contenedor {
+    position: relative;
+}
+
+.img-icon {
+    aspect-ratio: 1/1;
+    width: 16px;
+    height: 16px;
+}
+
+
+.boton-redondo svg {
+    fill: lightgray;
+}
+
+.boton-redondo:hover {
+    border: 0px solid lightgray;
+    background-color: var(--primary);
+    transition: 0.5s ease-in-out;
+}
+
+.boton-redondo:hover svg {
+    fill: white;
+}
+
+.carousel .carousel-indicators button {
+    width: 12px;
+    height: 12px;
+    border-radius: 100%;
+    background-color: var(--primary) !important;
+    position: relative;
+    bottom: -50px;
+}
+
+#social-icon a:hover {
+    color: var(--primary) !important;
+}
+
+.pt-9 {
+    padding-top: 9rem;
+}
+
+.btn-inside {
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    color: #ffffff;
+}
+
+.icon-inside {
+    position: absolute;
+    left: 8px;
+    top: 50%;
+    transform: translateX(10%);
+    border: none;
+
+}
+
+.btn-inside:hover {
+    background-color: #ff5100 !important;
+}
+
+.custom-sub {
+    position: relative;
+}
+
+.custom-sub-input {
+    border: none;
+    padding: 10px 100px 10px 20px;
+    box-sizing: border-box;
+    width: 500px;
+
+}
+
+.custom-sub-botton {
+    position: absolute;
+    right: 3px;
+    top: 3px;
+    bottom: 3px;
+    border: 0;
+    color: #fff;
+    outline: none;
+    margin: 0;
+    padding: 0 10px;
+    z-index: 2;
+}
+
+.img-4-3 {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 5/4;
+    object-fit: cover;
+    transition: 0.5s ease-in-out;
+}
+
+.card-bottom {
+    background-color: rgba(255, 255, 255, 0.8); /* Optional: Add a slight transparency to the top card */
+    position: relative;
+    z-index: 1;
+    top: 80px; 
+    left: 40px;
   }
+  
+.card-front{
+    z-index: 2;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.card-shadow{
+    box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.3);
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.clip-circle {
+    clip-path: circle(45%);
+    width: 70px;
+    height: 70px;
+    z-index: 3;
+    top: -40px;
+    left: -40px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .btn-size{
+    font-size: 23px;
+    color: var(--primary);
   }
+
+  .btn-outline-logout {
+    --bs-btn-color: var(--primary);
+    --bs-btn-border-color: var(--primary);
+    --bs-btn-hover-color: #ffffff;
+    --bs-btn-hover-bg: var(--primary);
+    --bs-btn-hover-border-color: var(--primary);
+    --bs-btn-focus-shadow-rgb: 255, 193, 7;
+    --bs-btn-active-color: #ffffff;
+    --bs-btn-active-bg: var(--primary);
+    --bs-btn-active-border-color: var(--primary);
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: var(--primary);
+    --bs-btn-disabled-bg: transparent;
+    --bs-btn-disabled-border-color: var(--primary);
+    --bs-gradient: none;
 }

@@ -1,0 +1,14 @@
+{
+    "destination": {
+        "title": "Welcome to Trabook's Destinations Section!",
+        "text_first": "Embark on a journey of discovery through our curated selection of destinations from around the globe. Whether you're dreaming of romantic getaways in Paris, cultural adventures in Tokyo, or beach retreats in Santorini, we've got you covered. Explore iconic landmarks, savor delicious cuisines, and immerse yourself in the vibrant cultures of our featured destinations.",
+        "text_secund": "Start exploring now and let the wanderlust begin!"
+    },
+    "blogWelcome": {
+        "text": "Welcome to the Trabook Blog! Here you'll find a treasure trove of travel inspiration, tips and ideas to fuel your wanderlust and make your travel experiences truly unforgettable."
+    },
+    "planWelcome": {
+        "title": "Welcome to Trabook's Plans Section!",
+        "text": "Welcome to our selection of vacation plans designed to create unforgettable memories at every moment. Our flexible daily plans offer the freedom to explore fascinating destinations and immerse yourself in unique experiences, without compromising your schedule or budget."
+    }
+}
